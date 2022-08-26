@@ -6,8 +6,7 @@ const path=require('path');
 const app=serv();
 
 app.use(morgan('tiny'));// combined
-app.use(serv.static(path.join(__dirname,'/files/')))
-
+app.use(serv.static(path.join(__dirname,'/files/')))//searching index or static file
 app.get('/',(req,res)=>{
      res.send("create web server");
 });
