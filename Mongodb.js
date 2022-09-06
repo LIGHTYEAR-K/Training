@@ -15,9 +15,9 @@ app.get('/',(req,res)=>
     client=await MongoClient.connect(url);
     console.log('connected to the DataBase');
     const db=client.db(dbName);
-    // const response=await db.collection('sampledata').insertMany(sampledata);   // to Create database
+    // const response=await db.collection('sampledata').insertMany(sampledata);   // to Create a Database
     // res.json(response);
-    const attack=await db.collection('sampledata').find().toArray;                 // to fetch data from database
+    const attack=await db.collection('sampledata').find().toArray;                 // to Fetch Data from the Database
     res.json(attack);
   } catch (error) {
     console.log(error.stack)
