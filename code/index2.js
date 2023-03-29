@@ -28,9 +28,9 @@ console.log(message.concat(" " + message2)) // console.log(message+" "+message2)
 
 
 //boolean 
-let bolean = true;
-bolean = !bolean
-console.log(bolean)
+let boolean = true;
+boolean = !boolean
+console.log(boolean)
 console.log(Boolean(1)); // true
 console.log(Boolean(0)) // false
 
@@ -439,3 +439,51 @@ for (const element of arrayEntries) {
 let [sim, sNo, date, ...remarks] = ['980989889', '1234', '2018-02-01', 'sim not working', 'network issue'];
 console.log(sim, sNo, date);
 console.log(remarks)
+
+console.log('==> Ceil '+Math.ceil(2.1));
+console.log('==> floor '+Math.floor(2.1));
+console.log('==> round '+Math.round(2.5));
+console.log('==> random '+Math.round(Math.random() * 7));
+console.log('==> abs '+Math.abs(50-100));
+console.log('==> max '+Math.max(34,67,8));
+console.log('==> min '+Math.min(34,67,8));
+console.log('==> sqrt '+Math.sqrt(25));
+console.log('==> power '+Math.pow(7, 3));
+
+// falsy values
+
+let line455 = undefined;
+let line456 = false;
+let line457 = '';
+let line458 = 0;
+if (!line455 && !line455 && !line457 && !line458){
+	console.log('==> falsy values')
+}
+
+//set
+
+let setters = new Set("bookerkeeper")
+setters.add(52);
+setters.add(52);
+setters.add(53);
+setters.add(54);
+console.log(setters)
+console.log(setters.has(52))
+
+// let records = [];
+// let data = `sNo
+// 351510010310863
+// 351510010310871
+// 351510010133181`;
+// let spliter = data.split('\n')
+// let header = spliter.shift().split('\t');
+// console.log(spliter);
+// console.log(header)
+
+// let values = {};
+// for (let stock of spliter){
+// 	values[header] = stock;
+// 	records.push(values);
+// }
+	
+// console.log(records)
